@@ -9,7 +9,8 @@ export const BaseInput = ({
                               multiline = false,
                               errorType = '',
                               mask = '',
-                              type = 'text'
+                              type = 'text',
+                              regexp = ''
                           }) => {
 
     return (
@@ -17,7 +18,7 @@ export const BaseInput = ({
             <Controller
                 name={name}
                 control={control}
-                rules={{required: required}}
+                rules={{required: required, pattern: regexp}}
                 render={({
                              field: {onChange, value},
                              fieldState: {error},
