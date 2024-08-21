@@ -43,7 +43,10 @@ export const BaseInput = ({
             />
 
             {errorType === 'required' &&
-                <Typography sx={{fontSize: '10px', color: 'var(--red)'}}>Обязательное поле</Typography>}
+                <Typography sx={{fontSize: '14px', color: 'var(--red)'}}>Обязательное поле</Typography>}
+
+            {errorType === 'pattern' &&
+                <Typography sx={{fontSize: '14px', color: 'var(--red)'}}>Введите валидное значение</Typography>}
 
         </>
     )
