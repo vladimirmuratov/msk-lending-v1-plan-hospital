@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://plan-hospital.mskdoctor.ru/sitemap.xml
