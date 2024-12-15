@@ -24,6 +24,9 @@ export const metadata = {
     other: {
         ['yandex-verification']: 'beaa9b40afa410b3',
     },
+    alternates: {
+        canonical: 'https://plan-hospital.mskdoctor.ru/'
+    }
 };
 
 export default function Home() {
