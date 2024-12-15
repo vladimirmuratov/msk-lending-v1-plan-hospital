@@ -4,7 +4,7 @@ import {Montserrat} from 'next/font/google'
 import {Box} from '@mui/material'
 import {Footer} from '@/components/Footer'
 import {Navigation} from '@/components/navigation/Navigation'
-// import {Metrika} from '@/components/Metrika'
+import {Metrika} from '@/components/Metrika'
 import {Suspense} from 'react'
 import theme from '@/theme'
 import './globals.css'
@@ -12,10 +12,16 @@ import './globals.css'
 const montserrat = Montserrat({subsets: ['latin', 'cyrillic']})
 
 export const metadata = {
-    title: 'МСК-Групп',
-    description: 'Платная госпитализация в федеральные и ведомственные лечебные учреждения Москвы. Плановая платная госпитализация',
-    keywords: 'платная плановая госпитализация в москве, скорая помощь'
-}
+    title: 'Платная плановая госпитализация. Звоните: +7 (499) 719-81-00, 24/7',
+    description: 'Платная плановая госпитализация без очередей! Звоните круглосуточно: +7 (499) 719-81-00. Ваше здоровье — наша забота!',
+    keywords: ['платная плановая госпитализация'],
+    other: {
+        ['yandex-verification']: 'beaa9b40afa410b3',
+    },
+    alternates: {
+        canonical: 'https://plan-hospital.mskdoctor.ru/'
+    }
+};
 
 export default function RootLayout({children}) {
     return (
@@ -27,8 +33,8 @@ export default function RootLayout({children}) {
                     <Suspense>
                         <Navigation/>
                         {children}
-                        {/*<Metrika/>*/}
                         <Footer/>
+                        <Metrika/>
                     </Suspense>
                 </Box>
             </ThemeProvider>
