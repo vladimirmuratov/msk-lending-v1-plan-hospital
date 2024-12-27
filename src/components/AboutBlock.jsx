@@ -29,9 +29,9 @@ export const AboutBlock = () => {
                     // marginBottom: '10px'
                 }}
             >
-                Частная медицинская фирма <Box component="span"
+                Частная медицинская организация <Box component="span"
                                                sx={{ color: 'var(--main-color)', fontWeight: 600 }}>МСК-Групп</Box> –
-                ваш надежный партнер в вопросах плановой госпитализации
+                ваш надежный партнер в вопросах плановой госпитализации.
             </Typography>
             <Typography component="p" sx={{ fontSize: { xs: 18, sm: 20 }, marginBottom: '10px' }}>
                 В эпоху прогрессивной медицины забота о здоровье занимает центральное место в жизни современного
