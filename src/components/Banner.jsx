@@ -1,25 +1,25 @@
-'use client'
+'use client';
 
-import {Box, Button, Typography} from '@mui/material'
-import {phoneNumber} from '@/config'
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/navigation'
-import SocialBlock from '@/components/SocialBlock'
+import { Box, Button, Typography } from '@mui/material';
+import { phoneNumber } from '@/config';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
+import SocialBlock from '@/components/SocialBlock';
 
 export const Banner = () => {
-    const router = useRouter()
-    const [isMobile, setMobile] = useState(true)
+    const router = useRouter();
+    const [isMobile, setMobile] = useState(true);
 
     useEffect(() => {
-        const os = navigator.userAgentData.platform
+        const os = navigator.userAgentData.platform;
 
         if (os === 'Android' || os === 'iOS') {
-            setMobile(true)
+            setMobile(true);
         } else {
-            setMobile(false)
+            setMobile(false);
         }
 
-    }, [])
+    }, []);
 
     return (
         <Box
@@ -38,32 +38,38 @@ export const Banner = () => {
                         xs: 'calc(var(--index) * 23)',
                         sm: 'calc(var(--index) * 23)',
                         md: 'calc(var(--index) * 23)',
-                        lg: 'calc(var(--index) * 20)'
+                        lg: 'calc(var(--index) * 23)'
                     },
-                    backgroundImage: `url(/images/images-for-landings/3.webp)`,
+                    backgroundImage: `url(/images/images-for-landings/9.webp)`,
                     backgroundSize: 'cover',
-                    backgroundPosition: {xs: 'center -5px', sm: 'center -10px', md: 'center -35px', lg: 'center -48px'}
+                    backgroundPosition: {
+                        xs: 'center -5px',
+                        sm: 'center -10px',
+                        md: 'center -35px',
+                        lg: 'center -48px'
+                    }
                 }}
             >
                 <Box sx={{
                     position: 'absolute',
-                    top: {xs: '10%', sm: '10%'},
+                    top: { xs: '10%', sm: '10%' },
                     left: '5%',
                 }}>
                     <Typography
                         variant="h1"
                         sx={{
                             color: 'var(--main-color)',
-                            fontSize: {xs: 22, sm: 40, md: 62},
+                            fontSize: { xs: 22, sm: 40, md: 62 },
                             lineHeight: 1,
                             fontWeight: 600,
-                            textShadow: '0px 4px 4px lightgray',
-                            marginBottom: {xs: '5px', sm: '10px'}
+                            textShadow: '2px 2px 2px white',
+                            marginBottom: { xs: '5px', sm: '10px' },
+                            textTransform: 'uppercase'
                         }}>
                         Платная
-                        <br/>
+                        <br />
                         плановая
-                        <br/>
+                        <br />
                         госпитализация
                     </Typography>
 
@@ -84,13 +90,13 @@ export const Banner = () => {
                             >
                                 Позвонить
                             </Button>
-                            <SocialBlock className="banner-social-mobile"/>
+                            <SocialBlock className="banner-social-mobile" />
                         </Box>)
                         : <Typography
                             sx={{
                                 color: 'var(--red)',
                                 display: isMobile ? 'none' : 'block',
-                                fontSize: {xs: 16, sm: 32, md: 62},
+                                fontSize: { xs: 16, sm: 32, md: 62 },
                                 fontWeight: 600,
                                 textShadow: '0px 4px 4px lightgray',
                             }}>{phoneNumber}</Typography>
@@ -98,5 +104,5 @@ export const Banner = () => {
                 </Box>
             </Box>
         </Box>
-    )
-}
+    );
+};
