@@ -12,8 +12,8 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    title: 'Плановая госпитализация Москва',
-    description: 'Госпитализация плановых пациентов',
+    title: 'Плановая госпитализация Москва. 8 (499) 719-81-00, 24/7',
+    description: 'Официальный координатор по госпитализации в Москве',
     keywords: ['платная плановая госпитализация'],
     other: {
         ['yandex-verification']: 'beaa9b40afa410b3',
