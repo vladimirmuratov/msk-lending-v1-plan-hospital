@@ -19,35 +19,35 @@ export const WeRespondBlock = () => {
                 fontSize: { xs: '28px', sm: '34px' },
                 fontWeight: 500
             }}>
-                Мы отвечаем за:
+                Мы обеспечиваем:
             </Typography>
 
-            <Box sx={{display: 'flex', flexDirection: 'column', gap: '15px'}}>
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
 
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Подбор идеальной
-                        медицинской клиники, учитывая все ключевые аспекты</Typography>
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Подбор клиники с
+                        учётом всех ключевых факторов.</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Экспертная оценка
-                        качества лечения и прозрачности ценовых условий для каждого пациента</Typography>
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Оценка качества
+                        лечения и прозрачности цен.</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Полное врачебное
-                        сопровождение на всех этапах терапевтического процесса</Typography>
+                        сопровождение на всех этапах лечения.</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
-                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}> Комплексный подход,
-                        охватывающий все аспекты поддержки больного</Typography>
+                    <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Комплексную
+                        поддержку на всех этапах.</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckIcon sx={{ color: 'var(--main-color)' }} />
                     <Typography variant="h3" sx={{ fontSize: { xs: 18, sm: 20 }, fontWeight: 500 }}>Юридическое
-                        обеспечение интересов клиентов в медицинских учреждениях</Typography>
+                        сопровождение в медицинских учреждениях.</Typography>
                 </Box>
 
             </Box>
