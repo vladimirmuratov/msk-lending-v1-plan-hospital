@@ -12,6 +12,7 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
+    metadataBase: new URL('https://plan-hospital.mskdoctor.ru'),
     title: 'Плановая госпитализация в Москве — Медицинская Сервисная Компания. 8 (499) 719-81-00, 24/7',
     description: 'Организуем плановую госпитализацию в ведущие клиники Москвы: подбор больницы, сопровождение, комфортные условия, помощь с документами. Индивидуальный подход и круглосуточная поддержка.',
     keywords: ['платная плановая госпитализация'],
