@@ -12,7 +12,7 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin', 'cyrillic'] });
 
 export const metadata = {
-    metadataBase: new URL('https://plan-hospital.mskdoctor.ru'),
+    metadataBase: new URL('https://msk-plan-hospital.vercel.app'),
     title: 'Плановая платная госпитализация — комфортное лечение в стационаре',
     description: 'Организация плановой платной госпитализации в клиники и стационары. Подбор отделения, оформление, сопровождение пациента без очередей.',
     keywords: ['платная плановая госпитализация'],
@@ -23,9 +23,12 @@ export const metadata = {
         title: 'Медицинская Сервисная Компания. Плановая госпитализация — платно, без очередей и ожидания. 8 (499) 719-81-00, 24/7',
         description: 'Организуем плановую госпитализацию в стационар: терапия, обследование, хирургия. Платно и без квот. Квалифицированные врачи, комфортные палаты.',
         images: ['/images/banner2.webp'],
-        url: 'https://plan-hospital.mskdoctor.ru/',
+        url: 'https://msk-plan-hospital.vercel.app/',
         type: 'website',
         locale: 'ru_RU',
+    },
+    alternates: {
+        canonical: 'https://msk-plan-hospital.vercel.app',
     }
 };
 
