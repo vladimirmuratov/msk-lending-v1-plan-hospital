@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
+Disallow: /*?*
 Sitemap: https://msk-plan-hospital.vercel.app/sitemap.xml
